@@ -11,6 +11,7 @@ import java.util.logging.Handler
 import kotlin.random.Random
 import kotlin.system.measureTimeMillis
 import kotlin.time.ExperimentalTime
+import kotlin.time.measureTime
 
 class MainActivity : AppCompatActivity() {
     @OptIn(ExperimentalTime::class)
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         fun bubbleSort(numbers: IntArray) {
             pg.max = numbers.size
             pg.setProgress(0)
-            val milliseconds = measureTimeMillis {
+            val milliseconds = measureTime {
             for (pass in 0 until (numbers.size - 1)) {
                 pg.setProgress(pass)
                 // A single pass of bubble sort
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         sort.setOnClickListener {
+            before.text = ""
             pg2.setProgress(0)
 
             var count = quantiy.text.toString().toInt()

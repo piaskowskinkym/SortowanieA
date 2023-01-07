@@ -46,27 +46,27 @@
 
     <TextView
         android:id="@+id/beforeTv"
-        android:layout_width="235dp"
-        android:layout_height="31dp"
+        android:layout_width="336dp"
+        android:layout_height="123dp"
         android:text="@string/before"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378" />
+        app:layout_constraintVertical_bias="0.44" />
 
     <TextView
         android:id="@+id/afterTv"
-        android:layout_width="198dp"
-        android:layout_height="49dp"
+        android:layout_width="306dp"
+        android:layout_height="145dp"
         android:text="@string/after"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        app:layout_constraintVertical_bias="0.795" />
 
     <TextView
         android:id="@+id/timeTv"
@@ -75,10 +75,10 @@
         android:text="@string/time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794" />
+        app:layout_constraintVertical_bias="0.925" />
 
     <android.widget.ProgressBar
         android:id="@+id/progressBar"
@@ -91,7 +91,7 @@
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.605" />
 
     <android.widget.ProgressBar
         android:id="@+id/progressBar2"
