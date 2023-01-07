@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sortowanie</string>
+    <string name="quantity">Wprowadź ilość liczb do posortowania</string>
+    <string name="before">Liczby przed posortowaniem</string>
+    <string name="after">Liczby po posortowaniu</string>
+    <string name="time">Tu pojawi się czas sortowania</string>
+</resources>
