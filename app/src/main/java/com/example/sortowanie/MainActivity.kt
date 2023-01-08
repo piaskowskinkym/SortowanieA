@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       val handler = android.os.Handler()
+        //ustawianie zmiennych
+         val handler = android.os.Handler()
         var before = findViewById<TextView>(R.id.beforeTv)
         var after = findViewById<TextView>(R.id.afterTv)
         var time = findViewById<TextView>(R.id.timeTv)
@@ -28,10 +29,12 @@ class MainActivity : AppCompatActivity() {
         var i = 0
         after.setMovementMethod(ScrollingMovementMethod())
         before.setMovementMethod(ScrollingMovementMethod())
+
+        //funkcja sortowania bombelkowego
         fun bubbleSort(numbers: IntArray) {
 
             pg.setProgress(0)
-
+            //liczenie czasu
             val milliseconds = measureTimeMillis {
                 for (pass in 0 until (numbers.size - 1)) {
 
@@ -54,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             time.text = ""
             var c = numbers.size-1
             pg.max = c
+            //wypisywanie posortowanych liczb i updateoanie progres baru wraz z procesem
             Thread(Runnable{
             while (i <= c) {
 
@@ -70,7 +74,8 @@ class MainActivity : AppCompatActivity() {
                 i++
 
             }
-                time.text= milliseconds.toString()
+                //czas nie pokazuje ile czasu zabrało wypiasnie posortowanej tabilcy ale w ile funkcja wszystko posortowała
+                time.text= "sortowanie trwało: " +(milliseconds % 1000).toString() + " sekund"
             }).start()
 
 
@@ -80,13 +85,13 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+        //fukcja guzika
         sort.setOnClickListener {
 
                 before.text = ""
 
                 var count = quantiy.text.toString().toInt()
-
+                //utworzenie tabvlicy losowych liczb odpowaidającej ilości wpisanej przez użytkownika
                 val toSort = IntArray(count)
                for (i in 0 until count) {
 

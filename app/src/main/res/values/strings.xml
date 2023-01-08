@@ -4,4 +4,5 @@
     <string name="before">Liczby przed posortowaniem</string>
     <string name="after">Liczby po posortowaniu</string>
     <string name="time">Tu pojawi się czas sortowania</string>
+    <string name="button">Wciśnij by posortować</string>
 </resources>
